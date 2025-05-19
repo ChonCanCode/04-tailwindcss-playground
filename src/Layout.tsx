@@ -10,7 +10,7 @@ export default function Layout() {
       </div>
 
       <h2 className="mb-2 mt-2">I am grid</h2>
-      <div className="grid border-2 border-amber-500 grid-cols-3">
+      <div className="grid border-2 border-amber-500 grid-cols-3 p-5">
         <div className="h-16  rounded-full bg-blue-500"></div>
         <div className="h-16  rounded-full bg-orange-500"></div>
         <div className="h-16  rounded-full bg-green-500"></div>
