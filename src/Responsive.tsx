@@ -8,6 +8,9 @@ export default function Responsive() {
       <div className="max-[600px]:bg-blue-600 min-[320px]:text-center min-[320px]:bg-blue-400 p-5">
         <p className="font-bold">I am using arbitrary value</p>
       </div>
+      <div className="bg-white text-black dark:bg-black dark:text-white">
+        Dark mode disabled!
+      </div>
     </>
   );
 }

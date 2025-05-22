@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Layout from "./layout";
+import Layout from "./Layout.tsx";
 import Responsive from "./Responsive.tsx";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Link to="/responsive">Responsive Page</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/" element={<h1>Welcome to Tailwindcss playground</h1>} />
         <Route path="/layout" element={<Layout />} />
         <Route path="/responsive" element={<Responsive />} />
       </Routes>
