@@ -7,7 +7,6 @@ export default function Responsive() {
     return notDark ? "bg-white text-black" : "bg-black text-white";
   }
 
-  // Toggle the dark class on <html> element
   useEffect(() => {
     const html = document.documentElement;
     if (notDark) {
