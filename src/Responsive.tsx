@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
 
 export default function Responsive() {
-  const [notDark, setNotDark] = useState(true);
+  const [isDark, setNotDark] = useState(true);
 
   function darkMode() {
-    return notDark ? "bg-white text-black" : "bg-black text-white";
+    return isDark ? "bg-white text-black" : "bg-black text-white";
   }
 
   useEffect(() => {
     const html = document.documentElement;
-    if (notDark) {
-      html.classList.remove("class");
+    if (isDark) {
+      html.classList.remove("darkmode");
     } else {
-      html.classList.add("class");
+      html.classList.add("darkmode");
     }
-  }, [notDark]);
+  }, [isDark]);
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function Responsive() {
       </div>
 
       <div className={`p-5 ${darkMode()}`}>
-        {notDark ? "Light mode enabled!" : "Dark mode enabled!"}
+        {isDark ? "Light mode enabled!" : "Dark mode enabled!"}
       </div>
 
       <button
