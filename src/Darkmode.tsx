@@ -1,18 +1,14 @@
 import { useState, useEffect } from "react";
 
-export default function Responsive() {
+export default function Darkmode() {
   const [notDark, setNotDark] = useState(true);
-
-  function darkMode() {
-    return notDark ? "bg-white text-black" : "bg-black text-white";
-  }
 
   useEffect(() => {
     const html = document.documentElement;
     if (notDark) {
-      html.classList.remove("class");
+      html.classList.remove("dark");
     } else {
-      html.classList.add("class");
+      html.classList.add("dark");
     }
   }, [notDark]);
 
@@ -26,7 +22,7 @@ export default function Responsive() {
         <p className="font-bold">I am using arbitrary value</p>
       </div>
 
-      <div className={`p-5 ${darkMode()}`}>
+      <div className="p-5 bg-white text-black dark:bg-black dark:text-white">
         {notDark ? "Light mode enabled!" : "Dark mode enabled!"}
       </div>
 
