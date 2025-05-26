@@ -2,8 +2,16 @@ export default function CustomStyle() {
   return (
     <>
       <h1>Custome Style</h1>
-      <p className="bg-stone-500 text-[34px] text-[#df9684]">In-line tyle</p>
-      <p className="card">Tailwind config</p>
+      <div className="flex-center">
+        <p>In-line tyle</p>
+        <p className="card">Tailwind config</p>
+        <div>
+          <label>
+            <input type="checkbox" className="accent-pink-400" checked />
+            Browser default
+          </label>
+        </div>
+      </div>
     </>
   );
 }

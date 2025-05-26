@@ -1,17 +1,27 @@
 @import "tailwindcss";
 
+/* customer style creation */
 @theme {
   --color-piggy: #df9684;
 }
 
+/* Classes creation */
 @layer components {
   .card {
     @apply m-10 rounded-lg bg-amber-700;
   }
 }
 
+/* Elements overlay */
 @layer base {
   h1 {
     @apply m-2 font-semibold;
   }
+  p {
+    @apply mt-2 text-sm bg-stone-500 text-[34px] text-[#df9684] rounded-md p-1;
+  }
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
 }
