@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* @custom-variant dark (&:where(.dark, .dark *)) */
+
 /* customer style creation */
 @theme {
   --color-piggy: #df9684;

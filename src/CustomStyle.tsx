@@ -18,7 +18,9 @@ export default function CustomStyle() {
         </div>
         <h1>Fluid Texts</h1>
         <div>
-          <h3 className="sm:text-7xl text-2xl">Text 2 size adjustment</h3>
+          <h3 className="sm:text-7xl text-2xl text-piggy">
+            Text 2 size adjustment
+          </h3>
           <h1 className="text-[min(10vw,70px)]">Fluid text</h1>
         </div>
       </div>
